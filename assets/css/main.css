@@ -71,6 +71,126 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+Slider
+--------------------------------------------------------------*/
+
+.slide-design {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('assets/img/web-banner-evento.png'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.slide-content {
+  text-align: center;
+  color: #fff; /* Cambiar el color del texto según sea necesario */
+}
+
+.slide-content h1 {
+  font-size: 3rem; /* Ajustar el tamaño de fuente según sea necesario */
+}
+
+.slide-content p {
+  font-size: 1.5rem; /* Ajustar el tamaño de fuente según sea necesario */
+}
+
+@media (max-width: 768px) {
+  .slide-content h1 {
+    font-size: 2rem; /* Ajustar el tamaño de fuente para dispositivos móviles */
+  }
+
+  .slide-content p {
+    font-size: 1rem; /* Ajustar el tamaño de fuente para dispositivos móviles */
+  }
+}
+
+
+  /* Estilos para el botón de WhatsApp flotante */
+.whatsapp-float {
+position: fixed;
+  bottom: 158px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  padding: 0px 13px;
+  background-color: #25d366;
+  font-size: 43px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+background-color: #128c7e;
+}
+.slider {
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+
+}
+
+.slide {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 100%;
+opacity: 0;
+transition: opacity 1s ease-in-out, left 1s ease-in-out;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.slide.active {
+opacity: 1;
+left: 0;
+}
+
+.slide.prev {
+left: -100%;
+}
+
+.slide-content {
+text-align: center;
+}
+.logo-container {
+display: flex;
+align-items: center;
+}
+
+.logo {
+max-width: 100%;
+height: auto;
+margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+.logo-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+}
+/*--------------------------------------------------------------
+Slider
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
