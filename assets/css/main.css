@@ -78,7 +78,7 @@ Slider
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url('assets/img/web-banner-evento.png'); /* Ruta de la imagen de fondo */
+  background-image: url('../../assets/img/web-banner-evento.png'); /* Ruta de la imagen de fondo */
   background-size: cover;
   background-position: bottom;
   display: flex;
